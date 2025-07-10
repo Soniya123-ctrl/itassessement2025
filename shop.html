@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aurora</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif, 'Times New Roman', Times, serif;
+      padding: 20px;
+      background-color: #ffe6f0;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f5f5;
+      color: #8a4869;
+      padding: 20px 30px;
+      border-bottom: 2px solid #8a4869;
+      flex-wrap: wrap;
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #8a4869;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex: 1;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #8a4869;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .icons span {
+      margin-left: 20px;
+      font-size: 22px;
+      color: #f5ebf0;
+      cursor: pointer;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin: 60px 0;
+    }
+
+    .product {
+      text-align: center;
+    }
+
+    .product img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto 15px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .product img:hover {
+      transform: scale(1.05);
+    }
+
+    .product p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .product i {
+      margin-left: 5px;
+    }
+
+    footer {
+      background-color: #fff;
+      color: #8a4869;
+      border-top: 2px solid #8a4869;
+      padding: 60px 10%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 15px;
+      flex-wrap: wrap;
+      text-align: left;
+      gap: 100px;
+    }
+
+    .footer-col {
+      flex: 2;
+      max-width: 200px;
+      min-width: 150px;
+    }
+
+    @media (max-width: 900px) {
+      .products {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      .footer-col {
+        width: 100%;
+        max-width: none;
+      }
+
+      .navbar-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Aurora</h1>
+      <nav class="nav-links">
+        <a href="index.html" target="_blank">Home</a>
+        <a href="shop.html" target="_blank">Shop</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </nav>
+    
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="image_section/glow bloom highlighter.jpg" alt="Glow Bloom Highlighter">
+        <p>Glow Bloom<br>Highlighter<br>Rs 1800 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/mascara.jpg" alt="Sky High Mascara">
+        <p>Sky High<br>Mascara<br>Rs 1800 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/pink splash blush.jpg" alt="Pink Splash Blush">
+        <p>Pink Splash<br>Blush<br>Rs 1500 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/tinted sunscreen.jpg" alt="Tinted Sunscreen">
+        <p>Tinted<br>Sunscreen<br>Rs 1600 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/color correcter.jpg" alt="Color Correcter">
+        <p>Color<br>Correcter<br>Rs 2450 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/matte bronzer.jpg" alt="Matte Bronzer">
+        <p>Matte<br>Bronzer<br>Rs 2200 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/loose powder.jpg" alt="Loose Powder">
+        <p>Loose<br>Powder<br>Rs 2000 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/eyeshadow palette.jpg" alt="Eyeshadow Palette">
+        <p>Eyeshadow<br>Palette<br>Rs 3280 🛍️</p>
+      </div>
+      <div class="product">
+        <img src="image_section/liquid concealer.jpg" alt="Liquid Concealer">
+        <p>Liquid<br>Concealer<br>Rs 5000 🛍️</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col">
+      <p><strong>Aurora Cosmetics</strong></p>
+      <p>Make up</p>
+      <p>Skincare</p>
+      <p>Others</p>
+    </div>
+    <div class="footer-col">
+      <p><strong>Help & Support</strong></p>
+      <p>Contact Us</p>
+      <p>Shipping</p>
+    </div>
+    <div class="footer-col">
+      <p><strong>Useful links</strong></p>
+      <p>Reviews</p>
+      <p>Privacy Policy</p>
+    </div>
+  </footer>
+
+</body>
+</html>

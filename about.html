@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aurora</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #ffe6f0; 
+      line-height: 1.5;
+       padding: 20px;
+  
+    }
+
+    /* Header / Nav */
+    header {
+      background-color: #fafafa;
+      padding: 20px 30px;
+      border-bottom: 2px solid #8a4869;
+      color: #8a4869;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f5f5;
+      color: #8a4869;
+      padding: 20px 30px;
+      border-bottom: 2px solid #8a4869;
+      flex-wrap: wrap;
+      width: 100%;
+      
+    }
+
+    .navbar-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 95%;
+    }
+
+
+    .logo {
+      font-size: 40px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #8a4869;
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex: 1;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #8a4869;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      color: #8a4869;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    nav {
+      flex-grow: 1;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      cursor: pointer;
+      font-size: 16px;
+      color: #8a4869;
+      font-weight: bold;
+    }
+
+    
+ 
+  .about_us_image img{
+    height: 700x;
+    width: 100%;
+
+  }
+    /* Content Styling */
+    .content {
+      padding: 0 80px 80px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .content h3 {
+      margin-top: 100px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #fff;
+      color: #8a4869;
+      border-top: 2px solid #8a4869;
+      padding: 60px 10%;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 15px;
+      flex-wrap: wrap;
+      text-align: left;
+      gap: 60px;
+    }
+
+    footer div {
+      flex: 1;
+      max-width: 200px;
+      min-width: 150px;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 900px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      footer div {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <h1 class="logo">Aurora</h1>
+      <nav class="nav-links">
+        <a href="index1.html" target="_blank">Home</a>
+        <a href="shop.html" target="_blank">Shop</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+      </nav>
+     
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <div class="about_us_image">
+      <img src="image_section/skin shade.jpg" alt="skin-shade">
+    </div>
+    <section class="content">
+      <h3>Our Story</h3>
+      <p>
+        Aurora was born to bring natural and elegant beauty solutions to life.
+        We believe that beauty starts with self-love and products that nurture your skin and soul.
+      </p>
+
+      <h3>What We Stand For</h3>
+      <ul>
+        <li><strong>Clean Beauty</strong> – No harsh chemicals, ever.</li>
+        <li><strong>Inclusivity</strong> – Our products are for every shade, shape, and identity.</li>
+        <li><strong>Glow with Purpose</strong> – Products designed to enhance your natural beauty, not mask it.</li>
+        <li><strong>Confidence, Not Conformity</strong> – We celebrate individuality, not perfection.</li>
+      </ul>
+
+      <h3>Why "Aurora"?</h3>
+      <p>
+        Aurora symbolizes a new beginning—the radiant glow of dawn. Just like the first light,
+        our products are made to uplift, illuminate, and renew your natural beauty.
+      </p>
+
+      <h3>Our Commitment</h3>
+      <ul>
+        <li><strong>Eco friendly and recyclable pakaging</strong></li>
+        <li><strong>Support for women-led cooperatives</strong></li>
+        <li><strong>Carbon-conscious production</strong></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <p><strong>Aurora Cosmetics</strong><br>Make up<br>Skincare<br>Others</p>
+    </div>
+    <div>
+      <p><strong>Help & Support</strong><br>Contact Us<br>Shipping</p>
+    </div>
+    <div>
+      <p><strong>Useful links</strong><br>Reviews<br>Privacy Policy</p>
+    </div>
+  </footer>
+
+</body>
+</html>
